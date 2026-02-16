@@ -66,9 +66,7 @@
 
     <section class="hero-section">
     <div class="container">
-        <div class="row min-vh-100 align-items-center pt-5">
-            <div class="col-12  hero-content-wrapper">
-                
+    
                 <h1 class="hero-hdr">About Us</h1>
                 
                 <p class="hero-desc mx-auto">
@@ -278,7 +276,7 @@
 </section>
 
 <script>
-const statCounters = document.querySelectorAll(".stat-number");
+    const statCounters = document.querySelectorAll(".stat-number");
 let statAnimated = false;
 
 const startStatCounting = () => {
@@ -334,14 +332,22 @@ const statObserver = new IntersectionObserver(
 
 const statSection = document.querySelector(".stats-wrapper");
 statObserver.observe(statSection);
-</script>
+
+
+
+
+
+</script> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
 
                 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-
+    
 </body>
 </html>

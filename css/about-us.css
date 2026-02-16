@@ -24,7 +24,7 @@
     padding: 80px;
 }
 
-/* Figma Gradient for Heading */
+
 .hero-hdr {
     font-size: 72px;
     font-weight: 800;
@@ -324,26 +324,144 @@
 
 
 /* media-query */
-
 @media (max-width: 992px) {
-    .stats-main-title {
-        margin-bottom: 50px;
-    }
-    .stat-separator {
-        margin: 0 20px;
-    }
+
+  .about-main-heading {
+    font-size: 34px;
+    max-width: 100%;
+  }
+
+  .stats-main-title {
+    font-size: 32px;
+  }
+
+  .stat-number {
+    font-size: 34px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .card-text {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .team-heading h2 {
+    font-size: 32px;
+  }
+
 }
 
-@media (max-width: 768px) {
-    .stat-number {
-        font-size: 28px;
-    }
-    .stat-label {
-        font-size: 10px;
-    }
+@media (max-width: 786px) {
 
-    .card-body {
-        padding: 30px !important;
-    }
+  .about-us-section {
+    padding: 80px 0;
+  }
+
+  .about-main-heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .about-sub-text {
+    font-size: 14px;
+  }
+
+  .stats-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stat-item {
+    margin-bottom: 20px; 
+  }
+
+  .stat-separator {
+    display: none;
+  }
+
+  .stats-main-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .card-body {
+    padding: 30px !important;
+  }
+
+  .team-heading h2 {
+    font-size: 28px;
+  }
+
+  .team-img {
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .about-us-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .section-tag {
+    justify-content: center;
+  }
+
+  .about-main-heading {
+    font-size: 22px;
+  }
+
+  .about-sub-text {
+    font-size: 13px;
+  }
+
+  .stats-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .stat-item {
+    margin-bottom: 18px; 
+    text-align: center;
+  }
+
+  .stats-main-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .team-heading h2 {
+    font-size: 22px;
+  }
+
+  .small-text {
+    font-size: 16px;
+  }
+
+  .team-card {
+    padding: 30px 15px;
+  }
+
+  .team-img {
+    width: 90px;
+    height: 90px;
+  }
+
 }
 
