@@ -1,0 +1,349 @@
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    /* background-color: #05010d; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Background Wave Image */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../assets/img/bannner-abt.png") no-repeat center bottom;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.hero-content-wrapper {
+    position: relative;
+    z-index: 5;
+    padding: 80px;
+}
+
+/* Figma Gradient for Heading */
+.hero-hdr {
+    font-size: 72px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #FFFFFF 0%, #41ecff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    /* max-width: 600px; */
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Custom Button to match your theme */
+.btn-primary-custom {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.about-us-section {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+
+.about-bg-vector-right {
+    position: absolute;
+    top: 10%;
+    right: 0; 
+    width: 300px;
+    height: auto;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+    transform: scaleX(-1); 
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+}
+
+/* Section Tag */
+.section-tag {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #fff; 
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.about-main-heading {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    max-width: 90%;
+}
+
+.about-sub-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 580px;
+}
+
+.about-image-card img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+}
+
+.about-image-card img:hover {
+    transform: translateY(-10px);
+}
+
+.btn-gradient-purple {
+    display: inline-block;
+    padding: 12px 35px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 10px 20px rgba(106, 17, 203, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-gradient-purple:hover {
+    box-shadow: 0 15px 30px rgba(106, 17, 203, 0.5);
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.statistics-section {
+    padding: 100px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stats-main-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+/* Stats Container */
+.stats-wrapper {
+    width: 100%;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+.stat-number {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.stat-label {
+    font-size: 11px; 
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: capitalize;
+    margin: 0;
+}
+
+
+.stat-separator {
+    width: 1px;
+    height: 50px; 
+    background-color: rgba(255, 255, 255, 0.3); 
+    margin: 0 40px; 
+}
+
+.mission-vision-section {
+    padding: 80px 0;
+
+}
+
+/* Base Card Styling */
+.mission-card, .vision-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.mission-card:hover, .vision-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Specific Backgrounds for each card */
+.mission-card {
+    background-image: url('../assets/img/our-mission.png'); 
+    
+}
+
+.vision-card {
+    background-image: url('../assets/img/our-vision.png'); 
+    
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 22px;
+    line-height: 2.2;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.team-section {
+  background: linear-gradient(180deg, #1e0f3f, #2a1257);
+  padding: 80px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-heading {
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.team-heading h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+
+
+.small-text {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.section-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #9d7bff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+.team-col {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 30px;
+}
+
+.team-card {
+  background: linear-gradient(180deg, #2e1760, #3a1d7a);
+  padding: 40px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team-card h5 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  color: #cfcfff;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 8px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #9d7bff;
+  transform: translateY(-3px);
+}
+
+
+.left-vector {
+  position: absolute;
+  left: 0;
+  top: 23%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+
+/* media-query */
+
+@media (max-width: 992px) {
+    .stats-main-title {
+        margin-bottom: 50px;
+    }
+    .stat-separator {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: 28px;
+    }
+    .stat-label {
+        font-size: 10px;
+    }
+
+    .card-body {
+        padding: 30px !important;
+    }
+}
+
