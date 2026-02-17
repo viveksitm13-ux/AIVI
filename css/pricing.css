@@ -43,7 +43,22 @@
     transition: 0.3s;
 }
 
-.mySwiper{
-     padding-bottom: 40px;
-}
+@media (max-width: 576px) {
+
+
+.hero-hdr {
+    font-size: 36px; 
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .hero-desc {
+    text-align: center;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  }
  

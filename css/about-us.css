@@ -1,7 +1,6 @@
 .hero-section {
     position: relative;
     min-height: 100vh;
-    /* background-color: #05010d; */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -35,14 +34,12 @@
 }
 
 .hero-desc {
-    /* max-width: 600px; */
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
     margin-bottom: 40px;
 }
 
-/* Custom Button to match your theme */
 .btn-primary-custom {
     background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
     border: none;
@@ -55,7 +52,7 @@
 
 .about-us-section {
     position: relative;
-    padding: 120px 0;
+    padding: 80px 0;
     overflow: hidden;
 }
 
@@ -143,7 +140,7 @@
 }
 
 .statistics-section {
-    padding: 100px 0;
+    padding: 80px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -461,6 +458,21 @@
   .team-img {
     width: 90px;
     height: 90px;
+  }
+
+  .hero-hdr {
+    font-size: 36px; 
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .hero-desc {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .hero-btns {
+    justify-content: center;
   }
 
 }

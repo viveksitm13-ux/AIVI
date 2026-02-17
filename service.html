@@ -13,8 +13,133 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./css/signup.css">
 </head>
     <body>
+
+        <!-- AUTH MODAL START -->
+    <div class="modal fade auth-modal" id="authModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content auth-modal-content">
+
+                <div class="row g-0 auth-card position-relative">
+
+                    <!-- Close button -->
+                    <button type="button" class="btn-close auth-close-btn" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                    <!-- LEFT SIDE -->
+                    <div class="col-lg-6 auth-left d-flex flex-column justify-content-center position-relative">
+
+                        <!-- LOGO -->
+                        <div class="auth-logo">
+                            <a href="#">
+                                <img src="./assets/img/navlogo.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="text-center auth-left-content">
+                            <h2 class="auth-title">Welcome Back!</h2>
+
+                            <p class="auth-subtitle">
+                                To Keep Connected With Us <br />
+                                Please Login With Your Personal Info
+                            </p>
+
+                            <a href="#" class="btn auth-btn-white">Log In</a>
+                        </div>
+
+                        <!-- Bottom Left Circle -->
+                        <div class="left-circle"></div>
+                    </div>
+
+                    <!-- RIGHT SIDE -->
+                    <div class="col-lg-6 auth-right d-flex flex-column justify-content-center">
+
+                        <div class="text-center">
+                            <h2 class="auth-title-right">Create An Account</h2>
+
+                            <div class="google-icon">
+                                <a href="#">
+                                    <img src="./assets/img/google-icon.png" alt="" />
+                                </a>
+                            </div>
+
+                            <p class="auth-small-text">
+                                Or Use Your Email For Registration
+                            </p>
+                        </div>
+
+                        <form class="auth-form mx-auto">
+
+                            <!-- Name -->
+                            <div class="auth-input">
+                                <span class="auth-input-icon">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25 26.25V23.75C25 22.4239 24.4732 21.1521 23.5355 20.2145C22.5979 19.2768 21.3261 18.75 20 18.75H10C8.67392 18.75 7.40215 19.2768 6.46447 20.2145C5.52678 21.1521 5 22.4239 5 23.75V26.25"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M15 13.75C17.7614 13.75 20 11.5114 20 8.75C20 5.98858 17.7614 3.75 15 3.75C12.2386 3.75 10 5.98858 10 8.75C10 11.5114 12.2386 13.75 15 13.75Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Name" />
+                            </div>
+
+                            <!-- Email -->
+                            <div class="auth-input">
+                                <span class="auth-input-icon">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M27.5 7.5L15 16.25L2.5 7.5" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <input type="email" class="form-control" placeholder="Email" />
+                            </div>
+
+                            <!-- Password -->
+                            <div class="auth-input">
+                                <span class="auth-input-icon">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.75 13.75H6.25C4.86929 13.75 3.75 14.8693 3.75 16.25V25C3.75 26.3807 4.86929 27.5 6.25 27.5H23.75C25.1307 27.5 26.25 26.3807 26.25 25V16.25C26.25 14.8693 25.1307 13.75 23.75 13.75Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.75 13.75V8.75C8.75 7.0924 9.40848 5.50269 10.5806 4.33058C11.7527 3.15848 13.3424 2.5 15 2.5C16.6576 2.5 18.2473 3.15848 19.4194 4.33058C20.5915 5.50269 21.25 7.0924 21.25 8.75V13.75"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <input type="password" class="form-control" placeholder="Password" />
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn auth-btn-dark">Sign Up</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- AUTH MODAL END -->
+
+
     <header class="hdr-sec">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
@@ -52,8 +177,13 @@
                         </ul>
 
                         <div class="nav-btn">
-                            <a class="primary-btn" href="">Login</a>
-                            <a class="secondary-btn" href="">Sign Up</a>
+                            <a class="primary-btn" href="" data-bs-toggle="modal" data-bs-target="#authModal">
+                                Login
+                            </a>
+
+                            <a class="secondary-btn" href="" data-bs-toggle="modal" data-bs-target="#authModal">
+                                Sign Up
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +198,6 @@
         <!-- Heading -->
         <h1 class="hero-hdr">Services</h1>
 
-        <!-- Breadcrumb -->
         <div class="breadcrumb-pill">
             Home / Services
         </div>

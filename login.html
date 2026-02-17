@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/signup.css" />
+</head>
+
+<body>
+    <section class="auth-page d-flex align-items-center">
+    <div class="container">
+        <div class="auth-wrapper">
+            <div class="row g-0 auth-card">
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-6 auth-left d-flex flex-column justify-content-center position-relative">
+
+                    <!-- LOGO -->
+                    <div class="auth-logo">
+                        <a href="">
+                            <img src="./assets/img/navlogo.png" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="text-center auth-left-content">
+                        <h2 class="auth-title">Welcome Back!</h2>
+
+                        <p class="auth-subtitle">
+                            To Keep Connected With Us <br />
+                            Please Login With Your Personal Info
+                        </p>
+
+                        <a href="#" class="btn auth-btn-white">Log In</a>
+                    </div>
+
+                    <!-- Bottom Left Circle -->
+                    <div class="left-circle"></div>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="col-lg-6 auth-right d-flex flex-column justify-content-center">
+
+                    <div class="text-center">
+                        <h2 class="auth-title-right">Login To Your Account</h2>
+
+                        <div class="google-icon">
+                            <a href="">
+                                <img src="./assets/img/google-icon.png" alt="" />
+                            </a>
+                        </div>
+
+                        <p class="auth-small-text">
+                            Or Use Your Email And Password
+                        </p>
+                    </div>
+
+                    <form class="auth-form mx-auto">
+
+                        <!-- Email -->
+                        <div class="auth-input">
+                            <span class="auth-input-icon">
+                                <!-- email icon svg -->
+                            </span>
+                            <input type="email" class="form-control" placeholder="Email" />
+                        </div>
+
+                        <!-- Password -->
+                        <div class="auth-input">
+                            <span class="auth-input-icon">
+                                <!-- lock icon svg -->
+                            </span>
+                            <input type="password" class="form-control" placeholder="Password" />
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn auth-btn-dark">Log In</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
