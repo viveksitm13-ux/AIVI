@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -17,127 +20,247 @@
 </head>
     <body>
 
+        <!---LOADER PART-->
+        <div id="pageLoader">
+            <div class="dot-spinner">
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+            </div>
+        </div>
+
         <!-- AUTH MODAL START -->
-    <div class="modal fade auth-modal" id="authModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content auth-modal-content">
+        <div class="modal fade auth-modal" id="authModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content auth-modal-content">
 
-                <div class="row g-0 auth-card position-relative">
+                    <div class="row g-0 auth-card position-relative">
 
-                    <!-- Close button -->
-                    <button type="button" class="btn-close auth-close-btn" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                        <!-- Close button -->
+                        <button type="button" class="btn-close auth-close-btn" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
 
-                    <!-- LEFT SIDE -->
-                    <div class="col-lg-6 auth-left d-flex flex-column justify-content-center position-relative">
+                        <!-- LEFT SIDE -->
+                        <div class="col-lg-6 auth-left d-flex flex-column justify-content-center position-relative">
 
-                        <!-- LOGO -->
-                        <div class="auth-logo">
-                            <a href="#">
-                                <img src="./assets/img/navlogo.png" alt="" />
-                            </a>
-                        </div>
-
-                        <div class="text-center auth-left-content">
-                            <h2 class="auth-title">Welcome Back!</h2>
-
-                            <p class="auth-subtitle">
-                                To Keep Connected With Us <br />
-                                Please Login With Your Personal Info
-                            </p>
-
-                            <a href="#" class="btn auth-btn-white">Log In</a>
-                        </div>
-
-                        <!-- Bottom Left Circle -->
-                        <div class="left-circle"></div>
-                    </div>
-
-                    <!-- RIGHT SIDE -->
-                    <div class="col-lg-6 auth-right d-flex flex-column justify-content-center">
-
-                        <div class="text-center">
-                            <h2 class="auth-title-right">Create An Account</h2>
-
-                            <div class="google-icon">
+                            <!-- LOGO -->
+                            <div class="auth-logo">
                                 <a href="#">
-                                    <img src="./assets/img/google-icon.png" alt="" />
+                                    <img src="./assets/img/navlogo.png" alt="" />
                                 </a>
                             </div>
 
-                            <p class="auth-small-text">
-                                Or Use Your Email For Registration
-                            </p>
+                            <div class="text-center auth-left-content">
+                                <h2 class="auth-title">Welcome Back!</h2>
+
+                                <p class="auth-subtitle">
+                                    To Keep Connected With Us <br />
+                                    Please Login With Your Personal Info
+                                </p>
+
+                                <a href="#" class="btn auth-btn-white">Log In</a>
+                            </div>
+
+                            <!-- Bottom Left Circle -->
+                            <div class="left-circle"></div>
                         </div>
 
-                        <form class="auth-form mx-auto">
+                        <!-- RIGHT SIDE -->
+                        <div class="col-lg-6 auth-right d-flex flex-column justify-content-center">
 
-                            <!-- Name -->
-                            <div class="auth-input">
-                                <span class="auth-input-icon">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25 26.25V23.75C25 22.4239 24.4732 21.1521 23.5355 20.2145C22.5979 19.2768 21.3261 18.75 20 18.75H10C8.67392 18.75 7.40215 19.2768 6.46447 20.2145C5.52678 21.1521 5 22.4239 5 23.75V26.25"
-                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M15 13.75C17.7614 13.75 20 11.5114 20 8.75C20 5.98858 17.7614 3.75 15 3.75C12.2386 3.75 10 5.98858 10 8.75C10 11.5114 12.2386 13.75 15 13.75Z"
-                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                                <input type="text" class="form-control" placeholder="Name" />
+                            <div class="text-center">
+                                <h2 class="auth-title-right">Create An Account</h2>
+
+                                <div class="google-icon">
+                                    <a href="#">
+                                        <img src="./assets/img/google-icon.png" alt="" />
+                                    </a>
+                                </div>
+
+                                <p class="auth-small-text">
+                                    Or Use Your Email For Registration
+                                </p>
                             </div>
 
-                            <!-- Email -->
-                            <div class="auth-input">
-                                <span class="auth-input-icon">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5Z"
-                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M27.5 7.5L15 16.25L2.5 7.5" stroke="white" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                                <input type="email" class="form-control" placeholder="Email" />
-                            </div>
+                            <form class="auth-form mx-auto">
 
-                            <!-- Password -->
-                            <div class="auth-input">
-                                <span class="auth-input-icon">
-                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M23.75 13.75H6.25C4.86929 13.75 3.75 14.8693 3.75 16.25V25C3.75 26.3807 4.86929 27.5 6.25 27.5H23.75C25.1307 27.5 26.25 26.3807 26.25 25V16.25C26.25 14.8693 25.1307 13.75 23.75 13.75Z"
-                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M8.75 13.75V8.75C8.75 7.0924 9.40848 5.50269 10.5806 4.33058C11.7527 3.15848 13.3424 2.5 15 2.5C16.6576 2.5 18.2473 3.15848 19.4194 4.33058C20.5915 5.50269 21.25 7.0924 21.25 8.75V13.75"
-                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                                <input type="password" class="form-control" placeholder="Password" />
-                            </div>
+                                <!-- Name -->
+                                <div class="auth-input">
+                                    <span class="auth-input-icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25 26.25V23.75C25 22.4239 24.4732 21.1521 23.5355 20.2145C22.5979 19.2768 21.3261 18.75 20 18.75H10C8.67392 18.75 7.40215 19.2768 6.46447 20.2145C5.52678 21.1521 5 22.4239 5 23.75V26.25"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M15 13.75C17.7614 13.75 20 11.5114 20 8.75C20 5.98858 17.7614 3.75 15 3.75C12.2386 3.75 10 5.98858 10 8.75C10 11.5114 12.2386 13.75 15 13.75Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Name" />
+                                </div>
 
-                            <div class="text-center mt-4">
-                                <button type="submit" class="btn auth-btn-dark">Sign Up</button>
-                            </div>
+                                <!-- Email -->
+                                <div class="auth-input">
+                                    <span class="auth-input-icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M27.5 7.5L15 16.25L2.5 7.5" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input type="email" class="form-control" placeholder="Email" />
+                                </div>
 
-                        </form>
+                                <!-- Password -->
+                                <div class="auth-input">
+                                    <span class="auth-input-icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.75 13.75H6.25C4.86929 13.75 3.75 14.8693 3.75 16.25V25C3.75 26.3807 4.86929 27.5 6.25 27.5H23.75C25.1307 27.5 26.25 26.3807 26.25 25V16.25C26.25 14.8693 25.1307 13.75 23.75 13.75Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M8.75 13.75V8.75C8.75 7.0924 9.40848 5.50269 10.5806 4.33058C11.7527 3.15848 13.3424 2.5 15 2.5C16.6576 2.5 18.2473 3.15848 19.4194 4.33058C20.5915 5.50269 21.25 7.0924 21.25 8.75V13.75"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input type="password" class="form-control" placeholder="Password" />
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn auth-btn-dark">Sign Up</button>
+                                </div>
+
+                            </form>
+
+                        </div>
 
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
-    <!-- AUTH MODAL END -->
+        <!-- AUTH MODAL END -->
+
+        <!-- AUTH MODAL START -->
+        <div class="modal fade auth-modal" id="loginModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content auth-modal-content">
+
+                    <div class="row g-0 auth-card position-relative">
+
+                        <!-- Close button -->
+                        <button type="button" class="btn-close auth-close-btn" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+
+                        <!-- LEFT SIDE -->
+                        <div class="col-lg-6 auth-left d-flex flex-column justify-content-center position-relative">
+
+                            <!-- LOGO -->
+                            <div class="auth-logo">
+                                <a href="#">
+                                    <img src="./assets/img/navlogo.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div class="text-center auth-left-content">
+                                <h2 class="auth-title">Welcome Back!</h2>
+
+                                <p class="auth-subtitle">
+                                    To Keep Connected With Us <br />
+                                    Please Login With Your Personal Info
+                                </p>
+
+                                <a href="#" class="btn auth-btn-white">Sign in</a>
+                            </div>
+
+                            <!-- Bottom Left Circle -->
+                            <div class="left-circle"></div>
+                        </div>
+
+                        <!-- RIGHT SIDE -->
+                        <div class="col-lg-6 auth-right d-flex flex-column justify-content-center">
+
+                            <div class="text-center">
+                                <h2 class="auth-title-right">Create An Account</h2>
+
+                                <div class="google-icon">
+                                    <a href="#">
+                                        <img src="./assets/img/google-icon.png" alt="" />
+                                    </a>
+                                </div>
+
+                                <p class="auth-small-text">
+                                    Or Use Your Email For Registration
+                                </p>
+                            </div>
+
+                            <form class="auth-form mx-auto">
+
+
+                                <!-- Email -->
+                                <div class="auth-input">
+                                    <span class="auth-input-icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M27.5 7.5L15 16.25L2.5 7.5" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input type="email" class="form-control" placeholder="Email" />
+                                </div>
+
+                                <!-- Password -->
+                                <div class="auth-input">
+                                    <span class="auth-input-icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.75 13.75H6.25C4.86929 13.75 3.75 14.8693 3.75 16.25V25C3.75 26.3807 4.86929 27.5 6.25 27.5H23.75C25.1307 27.5 26.25 26.3807 26.25 25V16.25C26.25 14.8693 25.1307 13.75 23.75 13.75Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M8.75 13.75V8.75C8.75 7.0924 9.40848 5.50269 10.5806 4.33058C11.7527 3.15848 13.3424 2.5 15 2.5C16.6576 2.5 18.2473 3.15848 19.4194 4.33058C20.5915 5.50269 21.25 7.0924 21.25 8.75V13.75"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input type="password" class="form-control" placeholder="Password" />
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn auth-btn-dark">Log in</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- AUTH MODAL END -->
+
 
 
     <header class="hdr-sec">
@@ -177,7 +300,7 @@
                         </ul>
 
                         <div class="nav-btn">
-                            <a class="primary-btn" href="" data-bs-toggle="modal" data-bs-target="#authModal">
+                            <a class="primary-btn" href="" data-bs-toggle="modal" data-bs-target="#loginModal">
                                 Login
                             </a>
 
@@ -212,16 +335,13 @@
 
 </section>
 
+<section class="services-section">
 
-
-
- <section class="services-section">
-
-        <div class="vector-bg">
+        <div class="vector-bg" data-aos="fade-up" data-aos-duration="3000">
             <img src="./assets/img/vector-10.png" alt="Gradient Glow">
         </div>
 
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="3000">
             <span class="tagline"><i class="fa-solid fa-circle"></i> Our Services</span>
             <h2 class="section-title">
                 Smarter AI to streamline, grow, <br>
@@ -233,7 +353,7 @@
             <div class="row services-grid">
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_15.png" alt="Automation">
                         </div>
@@ -245,7 +365,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_16.png" alt="Analytics">
                         </div>
@@ -257,7 +377,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_17.png" alt="Development">
                         </div>
@@ -269,7 +389,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_18.png" alt="ML Models">
                         </div>
@@ -281,7 +401,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_19.png" alt="Consulting">
                         </div>
@@ -293,7 +413,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_20.png" alt="Tracking">
                         </div>
@@ -316,25 +436,25 @@
 
         <div class="work-content">
 
-            <div class="tagline-white">
+            <div class="tagline-white" data-aos="fade-up" data-aos-duration="2000">
                 <i class="fa-solid fa-circle"></i> Work With Us
             </div>
 
-            <h2>
+            <h2 data-aos="fade-up" data-aos-duration="2000">
                 Smarter Growth Starts Here with <br>
                 Powerful AI Solutions
             </h2>
 
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2000">
                 Unlock Efficiency, Automate Operations, And Make Data-Driven Decisions With Ease. <br>
                 Our AI Tools Are Built To Help You Scale Faster And Work Smarter—Every Step Of The Way.
             </p>
 
-            <div class="work-buttons">
+            <div class="work-buttons" data-aos="fade-up" data-aos-duration="2000">
                 <a href="#" class="btn-get-started">Get Started</a>
 
                 <div class="how-it-works-btn">
-                    <div class="play-circle">
+                    <div class="play-circle" data-aos="fade-up" data-aos-duration="2000">
                         <img src="./assets/img/polygon-1.png" alt="Play Icon">
                     </div>
                     <span>How It Works</span>
@@ -344,7 +464,8 @@
         </div>
     </section>
 
-    <section class="faq-section">
+ 
+   <section class="faq-section">
         <div class="faq-vector">
             <img src="assets/img/vector-5.png" alt="Gradient Glow">
         </div>
@@ -352,10 +473,10 @@
         <div class="container">
             <div class="row mb-5 text-center">
                 <div class="col-12">
-                    <span class="faq-tagline mb-3">
+                    <span class="faq-tagline mb-3" data-aos="fade-up" data-aos-duration="2000">
                         <i class="fa-solid fa-circle"></i> Faq's
                     </span>
-                    <h2 class="faq-title">
+                    <h2 class="faq-title" data-aos="fade-up" data-aos-duration="2000">
                         Answers to Your Most <br class="d-none d-md-block">
                         Frequently Asked Questions
                     </h2>
@@ -366,7 +487,7 @@
                 <div class="col-lg-9">
                     <div class="accordion custom-faq-accordion" id="faqAccordion">
 
-                        <div class="accordion-item mb-4">
+                        <div class="accordion-item mb-4" data-aos="fade-up" data-aos-duration="2000">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -383,7 +504,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-4">
+                        <div class="accordion-item mb-4" data-aos="fade-up" data-aos-duration="2000">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -400,7 +521,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-4">
+                        <div class="accordion-item mb-4" data-aos="fade-up" data-aos-duration="2000">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -417,7 +538,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-4">
+                        <div class="accordion-item mb-4" data-aos="fade-up" data-aos-duration="2000">
                             <h2 class="accordion-header" id="headingfour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
@@ -441,6 +562,7 @@
         </div>
     </section>
 
+    <!-------CTA SECTION----->
     <section class="cta-section">
 
         <div class="cta-vector">
@@ -448,13 +570,13 @@
         </div>
 
         <div class="container">
-            <div class="row align-items-center cta-container">
+            <div class="row align-items-center ">
 
-                <div class="col-lg-6 cta-image">
+                <div class="col-lg-6 cta-image" data-aos="flip-left" data-aos-duration="3000">
                     <img src="./assets/img/image_36.png" alt="AI Robot">
                 </div>
 
-                <div class="col-lg-6 cta-content">
+                <div class="col-lg-6 cta-content" data-aos="fade-up-right" data-aos-duration="3000">
                     <h2>Let's Build <br> Something <br> Intelligent <br> Together</h2>
 
                     <a href="#" class="btn-get-started cta-btn-adjust">Get Started</a>
@@ -464,100 +586,115 @@
         </div>
     </section>
 
+
     <footer class="footer-section">
-        <div class="container">
-            <div class="row">
+            <div class="container">
+                <div class="row">
 
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <div class="footer-logo-wrapper mb-4">
-                        <img src="./assets/img/navlogo.png" alt="Aivio Logo" class="footer-logo">
-                    </div>
-                    <p class="footer-text mb-4">
-                        We create intelligent, scalable AI solutions that help businesses work smarter, move faster, and
-                        achieve more.
-                    </p>
-                    <div class="footer-socials d-flex">
-                        <a href="#" class="social-link me-3"><img src="./assets/img/facebook.png" alt="FB"></a>
-                        <a href="#" class="social-link me-3"><img src="./assets/img/instagram.png" alt="IG"></a>
-                        <a href="#" class="social-link"><img src="./assets/img/linkedin.png" alt="LI"></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-5 mb-lg-0 offset-lg-1">
-                    <h5 class="footer-heading mb-4">Navigation</h5>
-                    <ul class="footer-links list-unstyled">
-                        <li class="mb-3 d-flex align-items-center">
-                            <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
-                            <a href="#">About Us</a>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center">
-                            <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
-                            <a href="#">Service</a>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center">
-                            <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
-                            <a href="#">Project</a>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center">
-                            <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
-                            <a href="#">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <h5 class="footer-heading mb-4">Contact Info</h5>
-                    <ul class="footer-contact list-unstyled">
-                        <li class="d-flex mb-4">
-                            <img src="./assets/img/call.png" alt="Phone" class="me-3 footer-icon-img">
-                            <span>+61383766284</span>
-                        </li>
-                        <li class="d-flex mb-4">
-                            <img src="./assets/img/mail.png" alt="Email" class="me-3 footer-icon-img">
-                            <span>mailtoinfo@aivio.com</span>
-                        </li>
-                        <li class="d-flex">
-                            <img src="./assets/img/map-pin.png" alt="Location" class="me-3 footer-icon-img">
-                            <span>123 Real Estate Ave, NY 10001</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 position-relative">
-                    <h5 class="footer-heading mb-4">Newsletter Signup</h5>
-                    <form class="newsletter-form mb-3">
-                        <div class="newsletter-input-group">
-                            <input type="email" placeholder="Enter Your email Address" required>
-                            <button type="submit" class="btn-send">
-                                <img src="./assets/img/sending.png" alt="Send">
-                            </button>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                        <div class="footer-logo-wrapper mb-4">
+                            <img src="./assets/img/navlogo.png" alt="Aivio Logo" class="footer-logo">
                         </div>
-                        <div class="form-check mt-3">
-                            <input class="form-check-input" type="checkbox" id="privacyCheck">
-                            <label class="form-check-label ms-2" for="privacyCheck">
-                                I agree to the Privacy Policy
-                            </label>
+                        <p class="footer-text mb-4">
+                            We create intelligent, scalable AI solutions that help businesses work smarter, move faster,
+                            and
+                            achieve more.
+                        </p>
+                        <div class="footer-socials d-flex">
+                            <a href="#" class="social-link me-3"><img src="./assets/img/facebook.png" alt="FB"></a>
+                            <a href="#" class="social-link me-3"><img src="./assets/img/instagram.png" alt="IG"></a>
+                            <a href="#" class="social-link"><img src="./assets/img/linkedin.png" alt="LI"></a>
                         </div>
-                    </form>
+                    </div>
 
-                    <a href="#" class="btn-scroll-top">
-                        <img src="./assets/img/arrow-up.png" alt="Up">
-                    </a>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0 offset-lg-1" data-aos="fade-up" data-aos-delay="200">
+                        <h5 class="footer-heading mb-4">Navigation</h5>
+                        <ul class="footer-links list-unstyled">
+                            <li class="mb-3 d-flex align-items-center">
+                                <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
+                                <a href="#">Service</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
+                                <a href="#">Project</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
+                                <a href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                        <h5 class="footer-heading mb-4">Contact Info</h5>
+                        <ul class="footer-contact list-unstyled">
+                            <li class="d-flex mb-4">
+                                <img src="./assets/img/call.png" alt="Phone" class="me-3 footer-icon-img">
+                                <span>+61383766284</span>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <img src="./assets/img/mail.png" alt="Email" class="me-3 footer-icon-img">
+                                <span>mailtoinfo@aivio.com</span>
+                            </li>
+                            <li class="d-flex">
+                                <img src="./assets/img/map-pin.png" alt="Location" class="me-3 footer-icon-img">
+                                <span>123 Real Estate Ave, NY 10001</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 position-relative" data-aos="fade-up" data-aos-delay="400">
+                        <h5 class="footer-heading mb-4">Newsletter Signup</h5>
+                        <form class="newsletter-form mb-3">
+                            <div class="newsletter-input-group">
+                                <input type="email" placeholder="Enter Your email Address" required>
+                                <button type="submit" class="btn-send">
+                                    <img src="./assets/img/sending.png" alt="Send">
+                                </button>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" id="privacyCheck">
+                                <label class="form-check-label ms-2" for="privacyCheck">
+                                    I agree to the Privacy Policy
+                                </label>
+                            </div>
+                        </form>
+
+                        <a href="#" class="btn-scroll-top">
+                            <img src="./assets/img/arrow-up.png" alt="Up">
+                        </a>
+                    </div>
+
                 </div>
 
+                <div class="footer-bottom mt-5 pt-4" >
+                    <div class="divider-line mb-4"></div>
+                    <p class="text-center mb-0">Copyright © 2025 Aivio. All Rights Reserved.</p>
+                </div>
             </div>
+        </footer>
 
-            <div class="footer-bottom mt-5 pt-4">
-                <div class="divider-line mb-4"></div>
-                <p class="text-center mb-0">Copyright © 2025 Aivio. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+
+
+    
+
+    <!---------AOS JS CDN--------->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!---AOS JS-->
+        <script src="./script/aos.js"></script>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+        <script src="./script/looder.js"></script>
 
 
     </body>

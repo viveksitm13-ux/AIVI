@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AIVIO</title>
-    <!-- AOS -->
+    <!-- AOS CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Swiper CSS -->
@@ -24,6 +24,19 @@
 </head>
 
 <body>
+    <!---LOADER PART-->
+    <div id="pageLoader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
 
     <!-- AUTH MODAL START -->
     <div class="modal fade auth-modal" id="authModal" tabindex="-1" aria-hidden="true">
@@ -253,6 +266,7 @@
     <!-- AUTH MODAL END -->
 
 
+    <!----HEADER SECTION----->
     <header class="hdr-sec">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
@@ -300,9 +314,11 @@
                     </div>
                 </div>
             </nav>
-            </div>
+        </div>
     </header>
 
+
+    <!------------BANNER SECTION--------->
     <section class="hero-section">
         <div class="wave-bg">
             <div class="container">
@@ -356,6 +372,7 @@
     </section>
 
 
+    <!-------PARTNERS SECTION--------->
     <section class="partners-section">
         <div class="container-fluid">
             <div class="swiper partner-swiper">
@@ -405,6 +422,7 @@
         </div>
     </section>
 
+    <!-------ABOUT SECTION--------->
     <section class="about-section">
         <img src="./assets/img/vector-5.png" alt="Gradient Shape" class="about-bg-vector">
 
@@ -412,7 +430,7 @@
             <div class="row align-items-center">
 
                 <div class="col-md-6 about-content">
-                    <div class="section-tag mb-4">
+                    <div class="section-tag mb-4" data-aos="fade-left">
                         <p class="small-text">
                             <i class="fa-solid fa-circle section-dot-icon"></i>
                             About Us
@@ -420,12 +438,12 @@
 
                     </div>
 
-                    <h2 class="about-heading mb-5">
+                    <h2 class="about-heading mb-5" data-aos="fade-up" data-aos-duration="3000">
                         We are passionate about harnessing the power of artificial intelligence to solve real-world
                         problems.
                     </h2>
 
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center" data-aos="zoom-out" data-aos-duration="2500">
                         <a href="#" class="btn-read-more me-4">Read More</a>
 
                         <div class="clients-pill">
@@ -444,7 +462,7 @@
                 </div>
 
                 <div class="col-md-6 text-end">
-                    <div class="about-image-wrapper">
+                    <div class="about-image-wrapper" data-aos="flip-right" data-aos-duration="2000">
                         <img src="./assets/img/Group 2.png" alt="Human and Robot Hand" class="main-about-img img-fluid">
                     </div>
                 </div>
@@ -453,13 +471,15 @@
         </div>
     </section>
 
+    
+    <!----SERVICE SECTION--->
     <section class="services-section">
 
-        <div class="vector-bg">
+        <div class="vector-bg" data-aos="fade-up" data-aos-duration="3000">
             <img src="./assets/img/vector-10.png" alt="Gradient Glow">
         </div>
 
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="3000">
             <span class="tagline"><i class="fa-solid fa-circle"></i> Our Services</span>
             <h2 class="section-title">
                 Smarter AI to streamline, grow, <br>
@@ -471,7 +491,7 @@
             <div class="row services-grid">
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_15.png" alt="Automation">
                         </div>
@@ -483,7 +503,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_16.png" alt="Analytics">
                         </div>
@@ -495,7 +515,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_17.png" alt="Development">
                         </div>
@@ -507,7 +527,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_18.png" alt="ML Models">
                         </div>
@@ -519,7 +539,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_19.png" alt="Consulting">
                         </div>
@@ -531,7 +551,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-3">
-                    <div class="service-card h-100">
+                    <div class="service-card h-100" data-aos="flip-left" data-aos-duration="2000">
                         <div class="card-icon2">
                             <img src="./assets/img/image_20.png" alt="Tracking">
                         </div>
@@ -546,6 +566,8 @@
         </div>
     </section>
 
+
+    <!----WORK WITH US SECTION----->
     <section class="work-with-us">
 
         <div class="work-bg">
@@ -554,25 +576,25 @@
 
         <div class="work-content">
 
-            <div class="tagline-white">
+            <div class="tagline-white" data-aos="fade-up" data-aos-duration="2000">
                 <i class="fa-solid fa-circle"></i> Work With Us
             </div>
 
-            <h2>
+            <h2 data-aos="fade-up" data-aos-duration="2000">
                 Smarter Growth Starts Here with <br>
                 Powerful AI Solutions
             </h2>
 
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2000">
                 Unlock Efficiency, Automate Operations, And Make Data-Driven Decisions With Ease. <br>
                 Our AI Tools Are Built To Help You Scale Faster And Work Smarter—Every Step Of The Way.
             </p>
 
-            <div class="work-buttons">
+            <div class="work-buttons" data-aos="fade-up" data-aos-duration="2000">
                 <a href="#" class="btn-get-started">Get Started</a>
 
                 <div class="how-it-works-btn">
-                    <div class="play-circle">
+                    <div class="play-circle" data-aos="fade-up" data-aos-duration="2000">
                         <img src="./assets/img/polygon-1.png" alt="Play Icon">
                     </div>
                     <span>How It Works</span>
@@ -582,11 +604,12 @@
         </div>
     </section>
 
+    <!---ABOUT US SECTION---->
     <section class="about-us-section">
         <div class="container">
             <div class="row align-items-end about-header">
 
-                <div class="col-lg-8 about-text-content mb-4 mb-lg-0">
+                <div class="col-lg-8 about-text-content mb-4 mb-lg-0" data-aos="fade-right">
                     <span class="about-tagline mb-3">
                         <i class="fa-solid fa-circle"></i> About Us
                     </span>
@@ -596,7 +619,7 @@
                     </h2>
                 </div>
 
-                <div class="col-lg-4 text-lg-end pb-2">
+                <div class="col-lg-4 text-lg-end pb-2" data-aos="fade-right">
                     <a href="#" class="btn-view-all">View All</a>
                 </div>
 
@@ -604,6 +627,7 @@
         </div>
     </section>
 
+    <!---AIVI SECTION---->
     <section class="aivi-sec">
         <div class="container">
             <div class="grid">
@@ -625,40 +649,41 @@
             </div>
             <div class="grid-1">
                 <div class="grid-item">
-                    <div class="items">
+                    <div class="items" data-aos="flip-left" data-aos-duration="2000">
                         <img src="./assets/img/Frame-5.png" alt="" />
                     </div>
                 </div>
                 <div class="grid-item">
-                    <div class="items">
+                    <div class="items" data-aos="flip-left" data-aos-duration="2000">
                         <img src="./assets/img/Frame-3.png" alt="" />
                     </div>
                 </div>
                 <div class="grid-item">
-                    <div class="items">
+                    <div class="items" data-aos="flip-left" data-aos-duration="2000">
                         <img src="./assets/img/Frame-4.png" alt="" />
                     </div>
                 </div>
                 <div class="grid-item">
-                    <div class="items">
+                    <div class="items" data-aos="flip-left" data-aos-duration="2000">
                         <img src="./assets/img/Frame-6.png" alt="" />
                     </div>
                 </div>
             </div>
             <div class="grid-3">
-                <div class="grid-item">
+                <div class="grid-item" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="items"><img src="./assets/img/Frame-7.png" alt="" /></div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" data-aos="zoom-up" data-aos-duration="2000">
                     <div class="items"><img src="./assets/img/Frame-8.png" alt="" /></div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" data-aos="fade-right" data-aos-duration="2000">
                     <div class="items"><img src="./assets/img/Frame-9.png" alt="" /></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-----PRICING SECTION----->
     <section class="pricing-section">
 
         <div class="pricing-vector">
@@ -667,7 +692,7 @@
 
         <div class="pricing-header">
             <span class="pricing-tagline"><i class="fa-solid fa-circle"></i> Pricing plans</span>
-            <h2 class="pricing-title">
+            <h2 class="pricing-title" data-aos="fade-up" data-aos-duration="2000">
                 Affordable AI Plans to Streamline <br>
                 Work and Maximize Output
             </h2>
@@ -677,7 +702,7 @@
             <div class="row justify-content-center pricing-container">
 
                 <div class="col-lg-6 mb-4">
-                    <div class="pricing-card">
+                    <div class="pricing-card" data-aos="flip-right" data-aos-duration="3000">
                         <div class="card-left">
                             <h3>Starter Plan</h3>
                             <p class="plan-desc">Ideal for individuals and small teams getting started with AI</p>
@@ -702,7 +727,7 @@
                 </div>
 
                 <div class="col-lg-6 mb-4">
-                    <div class="pricing-card">
+                    <div class="pricing-card" data-aos="flip-right" data-aos-duration="3000">
                         <div class="card-left">
                             <h3>Starter Plan</h3>
                             <p class="plan-desc">Ideal for individuals and small teams getting started with AI</p>
@@ -731,6 +756,7 @@
     </section>
 
 
+    <!-----TESTIMONIAL SECTION-------->
     <section class="testimonials-section">
         <div class="container">
             <div class="row align-items-center container">
@@ -741,11 +767,11 @@
 
                 <div class="col-lg-6 testimonial-content">
 
-                    <div class="testimonial-tagline">
+                    <div class="testimonial-tagline" data-aos="fade-up" data-aos-duration="2000">
                         <i class="fa-solid fa-circle"></i> Testimonials
                     </div>
 
-                    <h2>Hear From Those Who've Grown With Us</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="2000">Hear From Those Who've Grown With Us</h2>
 
                     <!-- Swiper Start -->
                     <div class="swiper testimonialSwiper">
@@ -755,7 +781,7 @@
                             <!-- Slide 1 -->
                             <div class="swiper-slide">
 
-                                <p class="testimonial-text">
+                                <p class="testimonial-text" data-aos="fade-up" data-aos-duration="2000">
                                     Lorem ipsum dolor sit amet consectetur. Varius pellentesque tortor in dolor enim.
                                     Tempus vitae gravida mauris morbi egestas id fringilla.
                                 </p>
@@ -834,6 +860,8 @@
         </div>
     </section>
 
+
+    <!-----FAQ SECTION-------------->
     <section class="faq-section">
         <div class="faq-vector">
             <img src="assets/img/vector-5.png" alt="Gradient Glow">
@@ -842,10 +870,10 @@
         <div class="container">
             <div class="row mb-5 text-center">
                 <div class="col-12">
-                    <span class="faq-tagline mb-3">
+                    <span class="faq-tagline mb-3" data-aos="fade-up" data-aos-duration="2000">
                         <i class="fa-solid fa-circle"></i> Faq's
                     </span>
-                    <h2 class="faq-title">
+                    <h2 class="faq-title" data-aos="fade-up" data-aos-duration="2000">
                         Answers to Your Most <br class="d-none d-md-block">
                         Frequently Asked Questions
                     </h2>
@@ -856,7 +884,7 @@
                 <div class="col-lg-9">
                     <div class="accordion custom-faq-accordion" id="faqAccordion">
 
-                        <div class="accordion-item mb-4">
+                        <div class="accordion-item mb-4" data-aos="fade-up" data-aos-duration="2000">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -873,7 +901,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-4">
+                        <div class="accordion-item mb-4" data-aos="fade-up" data-aos-duration="2000">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -890,7 +918,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-4">
+                        <div class="accordion-item mb-4" data-aos="fade-up" data-aos-duration="2000">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -907,7 +935,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item mb-4">
+                        <div class="accordion-item mb-4" data-aos="fade-up" data-aos-duration="2000">
                             <h2 class="accordion-header" id="headingfour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
@@ -931,6 +959,8 @@
         </div>
     </section>
 
+
+    <!-------CTA SECTION----->
     <section class="cta-section">
 
         <div class="cta-vector">
@@ -940,11 +970,11 @@
         <div class="container">
             <div class="row align-items-center ">
 
-                <div class="col-lg-6 cta-image">
+                <div class="col-lg-6 cta-image" data-aos="flip-left" data-aos-duration="3000">
                     <img src="./assets/img/image_36.png" alt="AI Robot">
                 </div>
 
-                <div class="col-lg-6 cta-content">
+                <div class="col-lg-6 cta-content" data-aos="fade-up-right" data-aos-duration="3000">
                     <h2>Let's Build <br> Something <br> Intelligent <br> Together</h2>
 
                     <a href="#" class="btn-get-started cta-btn-adjust">Get Started</a>
@@ -954,97 +984,100 @@
         </div>
     </section>
 
+
+    <!-----FOOTER SECTION------>
     <footer class="footer-section">
-        <div class="container">
-            <div class="row">
+            <div class="container">
+                <div class="row">
 
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <div class="footer-logo-wrapper mb-4">
-                        <img src="./assets/img/navlogo.png" alt="Aivio Logo" class="footer-logo">
-                    </div>
-                    <p class="footer-text mb-4">
-                        We create intelligent, scalable AI solutions that help businesses work smarter, move faster, and
-                        achieve more.
-                    </p>
-                    <div class="footer-socials d-flex">
-                        <a href="#" class="social-link me-3"><img src="./assets/img/facebook.png" alt="FB"></a>
-                        <a href="#" class="social-link me-3"><img src="./assets/img/instagram.png" alt="IG"></a>
-                        <a href="#" class="social-link"><img src="./assets/img/linkedin.png" alt="LI"></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-5 mb-lg-0 offset-lg-1">
-                    <h5 class="footer-heading mb-4">Navigation</h5>
-                    <ul class="footer-links list-unstyled">
-                        <li class="mb-3 d-flex align-items-center">
-                            <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
-                            <a href="#">About Us</a>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center">
-                            <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
-                            <a href="#">Service</a>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center">
-                            <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
-                            <a href="#">Project</a>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center">
-                            <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
-                            <a href="#">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <h5 class="footer-heading mb-4">Contact Info</h5>
-                    <ul class="footer-contact list-unstyled">
-                        <li class="d-flex mb-4">
-                            <img src="./assets/img/call.png" alt="Phone" class="me-3 footer-icon-img">
-                            <span>+61383766284</span>
-                        </li>
-                        <li class="d-flex mb-4">
-                            <img src="./assets/img/mail.png" alt="Email" class="me-3 footer-icon-img">
-                            <span>mailtoinfo@aivio.com</span>
-                        </li>
-                        <li class="d-flex">
-                            <img src="./assets/img/map-pin.png" alt="Location" class="me-3 footer-icon-img">
-                            <span>123 Real Estate Ave, NY 10001</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 position-relative">
-                    <h5 class="footer-heading mb-4">Newsletter Signup</h5>
-                    <form class="newsletter-form mb-3">
-                        <div class="newsletter-input-group">
-                            <input type="email" placeholder="Enter Your email Address" required>
-                            <button type="submit" class="btn-send">
-                                <img src="./assets/img/sending.png" alt="Send">
-                            </button>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                        <div class="footer-logo-wrapper mb-4">
+                            <img src="./assets/img/navlogo.png" alt="Aivio Logo" class="footer-logo">
                         </div>
-                        <div class="form-check mt-3">
-                            <input class="form-check-input" type="checkbox" id="privacyCheck">
-                            <label class="form-check-label ms-2" for="privacyCheck">
-                                I agree to the Privacy Policy
-                            </label>
+                        <p class="footer-text mb-4">
+                            We create intelligent, scalable AI solutions that help businesses work smarter, move faster,
+                            and
+                            achieve more.
+                        </p>
+                        <div class="footer-socials d-flex">
+                            <a href="#" class="social-link me-3"><img src="./assets/img/facebook.png" alt="FB"></a>
+                            <a href="#" class="social-link me-3"><img src="./assets/img/instagram.png" alt="IG"></a>
+                            <a href="#" class="social-link"><img src="./assets/img/linkedin.png" alt="LI"></a>
                         </div>
-                    </form>
+                    </div>
 
-                    <a href="#" class="btn-scroll-top">
-                        <img src="./assets/img/arrow-up.png" alt="Up">
-                    </a>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0 offset-lg-1" data-aos="fade-up" data-aos-delay="200">
+                        <h5 class="footer-heading mb-4">Navigation</h5>
+                        <ul class="footer-links list-unstyled">
+                            <li class="mb-3 d-flex align-items-center">
+                                <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
+                                <a href="#">Service</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
+                                <a href="#">Project</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <img src="./assets/img/line-5.png" alt="arrow" class="me-2">
+                                <a href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                        <h5 class="footer-heading mb-4">Contact Info</h5>
+                        <ul class="footer-contact list-unstyled">
+                            <li class="d-flex mb-4">
+                                <img src="./assets/img/call.png" alt="Phone" class="me-3 footer-icon-img">
+                                <span>+61383766284</span>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <img src="./assets/img/mail.png" alt="Email" class="me-3 footer-icon-img">
+                                <span>mailtoinfo@aivio.com</span>
+                            </li>
+                            <li class="d-flex">
+                                <img src="./assets/img/map-pin.png" alt="Location" class="me-3 footer-icon-img">
+                                <span>123 Real Estate Ave, NY 10001</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 position-relative" data-aos="fade-up" data-aos-delay="400">
+                        <h5 class="footer-heading mb-4">Newsletter Signup</h5>
+                        <form class="newsletter-form mb-3">
+                            <div class="newsletter-input-group">
+                                <input type="email" placeholder="Enter Your email Address" required>
+                                <button type="submit" class="btn-send">
+                                    <img src="./assets/img/sending.png" alt="Send">
+                                </button>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" id="privacyCheck">
+                                <label class="form-check-label ms-2" for="privacyCheck">
+                                    I agree to the Privacy Policy
+                                </label>
+                            </div>
+                        </form>
+
+                        <a href="#" class="btn-scroll-top">
+                            <img src="./assets/img/arrow-up.png" alt="Up">
+                        </a>
+                    </div>
+
                 </div>
 
+                <div class="footer-bottom mt-5 pt-4" >
+                    <div class="divider-line mb-4"></div>
+                    <p class="text-center mb-0">Copyright © 2025 Aivio. All Rights Reserved.</p>
+                </div>
             </div>
+        </footer>
 
-            <div class="footer-bottom mt-5 pt-4">
-                <div class="divider-line mb-4"></div>
-                <p class="text-center mb-0">Copyright © 2025 Aivio. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 
@@ -1053,9 +1086,14 @@
         crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="./script/script.js">
+    <script src="./script/script.js"></script>
 
-    </script>
+    <!---------AOS JS CDN--------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!---AOS JS-->
+    <script src="./script/aos.js"></script>
+
 
     <script>
         const starCounters = document.querySelectorAll(".star-value");
@@ -1115,7 +1153,7 @@
         const heroSection = document.querySelector(".hero-stars");
         heroObserver.observe(heroSection);
     </script>
-
+    <script src="./script/looder.js"></script>
 
 
 

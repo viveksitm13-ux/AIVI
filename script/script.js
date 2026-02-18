@@ -48,35 +48,6 @@ const partner_swiper = new Swiper(".partner-swiper", {
 
 
 
-// const testimonialSwiper = new Swiper(".testimonial-swiper", {
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     loop: true,
-//     autoplay: {
-//         delay: 5000,
-//     },
-//     pagination: {
-//         el: ".testimonial-pagination",
-//         clickable: true,
-//     },
-// });
-
-
-// var swiper = new Swiper(".testimonialSwiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   loop: true,
-//   autoplay: {
-//     delay: 4000,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: ".testimonial-pagination",
-//     clickable: true,
-//   },
-// });
-
-
 var swiper = new Swiper(".testimonialSwiper", {
   autoplay: {
     delay: 2500,
